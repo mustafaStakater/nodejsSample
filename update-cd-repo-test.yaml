@@ -154,8 +154,7 @@ spec:
             git add .
             git commit -m "Add/Update ENVIRONMENT for ${REPO} pr - $(params.PR_NUMBER)"
             set -e
-          elif [ "$(params.PR_NUMBER)" = "NA" ] && ( [ "$(params.GIT_REVISION)" =
-          "main" ] || [ "$(params.GIT_REVISION)" = "master" ] ); then
+          elif [ "$(params.PR_NUMBER)" = "NA" ] && ( [ "$(params.GIT_REVISION)" = "main" ] || [ "$(params.GIT_REVISION)" = "master" ] ); then
             echo "Updating chart for repo ${REPO}"
             echo "Repo ${IMAGE_NAME}"
             echo "Tag $(params.IMAGE_NAME)"
