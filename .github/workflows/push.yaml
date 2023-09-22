@@ -19,3 +19,4 @@ jobs:
           sudo apt install ansible
           pip3 install openshift pyyaml kubernetes
           ansible-galaxy collection install kubernetes.core
+
