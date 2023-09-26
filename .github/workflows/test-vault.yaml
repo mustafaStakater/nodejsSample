@@ -18,6 +18,7 @@ jobs:
                 url: https://hub-vault.apps.tno1-ams.s9nghh76.lab.kubeapp.cloud/
                 method: jwt
                 role: mustafastakater-nodejssample
+                jwtGithubAudience: sigstore # set the GitHub token's aud claim
 
                 secrets: |
                     stakater/github/nodejssample abcdefg | ABC ;
