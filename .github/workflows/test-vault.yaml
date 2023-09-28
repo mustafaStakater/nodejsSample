@@ -22,6 +22,4 @@ jobs:
                 secrets: |
                     stakater/data/github/nodejssample abcdefg | ABC ;
             - name: Step following 'Import Secrets'
-              run: |
-                ABC = "${{ env.ABC }}"
-                echo $ABC
+              run: echo "${{ steps.import-secrets.outputs.ABC }}"
