@@ -18,7 +18,7 @@ jobs:
                 url: https://hub-vault.apps.tno1-ams.s9nghh76.lab.kubeapp.cloud/
                 method: jwt
                 path: githubactionsjwt
-                role: mustafastakater-nodejssample
+                role: mustafaStakater-nodejsSample
                 secrets: |
                     stakater/data/github/mustafaStakater-nodejsSample abcdefg | ABC ;
             - name: Step following 'Import Secrets'
