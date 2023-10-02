@@ -21,6 +21,5 @@ jobs:
                 role: mustafastakater-nodejssample
                 secrets: |
                     stakater/data/github/mustafastakater-nodejssample abcdefg | ABC ;
-                jwtTtl: 120
             - name: Step following 'Import Secrets'
               run: echo "${{ steps.import-secrets.outputs.ABC }}"
