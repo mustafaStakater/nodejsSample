@@ -20,6 +20,6 @@ jobs:
                 path: githubactionsjwt
                 role: mustafaStakater-nodejsSample
                 secrets: |
-                    stakater/data/github/mustafaStakater-nodejsSample/secrets abcdefg | ABC ;
+                    stakater/data/github/mustafaStakater-nodejsSample/secrets abcdeg | ABC ;
             - name: Step following 'Import Secrets'
               run: echo "${{ steps.import-secrets.outputs.ABC }}"
