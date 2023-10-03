@@ -18,8 +18,9 @@ jobs:
                 url: https://hub-vault.apps.tno1-ams.s9nghh76.lab.kubeapp.cloud/https://github.com/mustafaStakater/nodejsSample/edit/master/.github/workflows/test-vault.yaml
                 method: jwt
                 path: githubactionsjwt
-                role: mustafaStakater-nodejsSample
+                role: mustafastakater-nodejssample
                 secrets: |
                     stakater/data/github/mustafaStakater-nodejsSample/secrets abcdeg | ABC ;
             - name: Step following 'Import Secrets'
               run: echo "${{ steps.import-secrets.outputs.ABC }}"
+ 
