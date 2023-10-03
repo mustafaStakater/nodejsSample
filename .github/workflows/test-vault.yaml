@@ -15,7 +15,7 @@ jobs:
               id: import-secrets
               uses: hashicorp/vault-action@v2
               with:
-                url: https://hub-vault.apps.tno1-ams.s9nghh76.lab.kubeapp.cloud/https://github.com/mustafaStakater/nodejsSample/edit/master/.github/workflows/test-vault.yaml
+                url: https://hub-vault.apps.tno1-ams.s9nghh76.lab.kubeapp.cloud/
                 method: jwt
                 path: githubactionsjwt
                 role: mustafastakater-nodejssample
