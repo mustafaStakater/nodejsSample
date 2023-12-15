@@ -60,4 +60,4 @@ jobs:
           echo $SECRET_TOKEN
       - name: Check Env
         run: |
-          echo "${{ github.event.inputs.INP_SECRET_TOKEN }}"
+          echo "${{ github.event.inputs.secret }}"
