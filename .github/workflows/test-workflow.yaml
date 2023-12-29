@@ -20,14 +20,14 @@ jobs:
         run: |
           INP_SECRET=$(jq -r '.inputs.secret' $GITHUB_EVENT_PATH)
           INP_TOKEN=$(jq -r '.inputs.token' $GITHUB_EVENT_PATH)
-          INP_SECRET_TOKEN=$(jq -r '.inputs.secret_token' $GITHUB_EVENT_PATH)
+          INP_SECRET_TOKEN=${{ github.event.inputs.secret_token}}
           echo Before mask
           echo $INP_SECRET
           echo $INP_TOKEN
           echo $INP_SECRET_TOKEN
           echo ::add-mask::$INP_SECRET
           echo ::add-mask::$INP_TOKEN
-          echo ::add-mask::$INP_SECRET_TOKEN
+          echo ::add-mask::${{ github.event.inputs.secret_token}}
           echo After mask
           echo $INP_SECRET
           echo $INP_TOKEN
