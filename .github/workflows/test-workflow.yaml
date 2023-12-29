@@ -18,6 +18,15 @@ jobs:
       - name: Test masking inputs
         id: add_mask
         run: |
+          inps=$(jq -r '.inputs' $GITHUB_EVENT_PATH)
+          for i in $inps
+          do 
+            echo $i
+          done
+
+      - name: Test masking inputs
+        id: add_mask
+        run: |
           INP_SECRET=$(jq -r '.inputs.secret' $GITHUB_EVENT_PATH)
           INP_TOKEN=$(jq -r '.inputs.token' $GITHUB_EVENT_PATH)
           INP_SECRET_TOKEN="${{ github.event.inputs.secret_token}}"
