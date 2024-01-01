@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Test masking inputs
-        id: add_mask
+        id: loop
         run: |
           inps=$(jq -r '.inputs' $GITHUB_EVENT_PATH)
           for i in $inps
