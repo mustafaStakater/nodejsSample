@@ -18,15 +18,7 @@ jobs:
       - name: Test masking inputs
         id: loop
         run: |
-          inps=$(jq -r '.inputs' $GITHUB_EVENT_PATH)
-          jq -c '.[]' $inps | while read i; do
-              echo $i
-          done
-  
-          for i in $inps
-          do 
-            echo "a" $i
-          done
+          echo $GITHUB_EVENT_PATH
 
       - name: Test masking inputs
         id: add_mask
