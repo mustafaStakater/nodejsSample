@@ -21,7 +21,7 @@ jobs:
           inps=$(jq -r '.inputs' $GITHUB_EVENT_PATH)
           for i in $inps
           do 
-            echo $i
+            echo "a" $i
           done
 
       - name: Test masking inputs
